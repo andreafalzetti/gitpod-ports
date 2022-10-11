@@ -1,0 +1,20 @@
+
+tasks:
+  - command: curl lama.sh | sh -s -- -p 3000
+  - command: curl lama.sh | sh -s -- -p 3001
+  - command: curl lama.sh | sh -s -- -p 3002
+  - command: curl lama.sh | sh -s -- -p 3003
+  - command: curl lama.sh | sh -s -- -p 3004
+  - command: curl lama.sh | sh -s -- -p 3005
+  - command: curl lama.sh | sh -s -- -p 3006
+ 
+ports:
+  - port: 3000
+    onOpen: open-browser
+  - port: 3001
+    onOpen: open-preview
+  - port: 3002
+    onOpen: ignore
+  - port: 3003
+    onOpen: notify
+
