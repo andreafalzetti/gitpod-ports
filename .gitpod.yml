@@ -11,10 +11,13 @@ tasks:
 ports:
   - port: 3000
     onOpen: open-browser
+    visibility: public
   - port: 3001
     onOpen: open-preview
+    visibility: public    
   - port: 3002
     onOpen: ignore
+    visibility: public    
   - port: 3003
     onOpen: notify
 
