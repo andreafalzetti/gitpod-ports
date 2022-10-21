@@ -1,6 +1,6 @@
 
 tasks:
-  - command: curl lama.sh | sh -s -- -p 3000
+#  - command: curl lama.sh | sh -s -- -p 3000
   - command: curl lama.sh | sh -s -- -p 3001
   - command: curl lama.sh | sh -s -- -p 3002
   - command: curl lama.sh | sh -s -- -p 3003
