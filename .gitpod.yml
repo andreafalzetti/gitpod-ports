@@ -1,7 +1,7 @@
 
 tasks:
 #  - command: curl lama.sh | sh -s -- -p 3000
-  - command: curl lama.sh | sh -s -- -p 3001
+  - command: curl lama.sh | sh -s -- -p 5555
   - command: curl lama.sh | sh -s -- -p 3002
   - command: curl lama.sh | sh -s -- -p 3003
   - command: curl lama.sh | sh -s -- -p 3004
@@ -9,9 +9,8 @@ tasks:
   - command: curl lama.sh | sh -s -- -p 3006
  
 ports:
-  - port: 3000
-    onOpen: open-browser
-    visibility: public
+  - port: 5555
+    visibility: private
   - port: 3001
     onOpen: open-preview
     visibility: public    
