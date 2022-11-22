@@ -1,6 +1,5 @@
 
 tasks:
-#  - command: curl lama.sh | sh -s -- -p 3000
   - command: curl lama.sh | sh -s -- -p 5555
   - command: curl lama.sh | sh -s -- -p 3002
   - command: curl lama.sh | sh -s -- -p 3003
@@ -11,12 +10,13 @@ tasks:
 ports:
   - port: 5555
     visibility: private
+    onOpen: ignore
   - port: 3001
     onOpen: open-preview
-    visibility: public    
+    visibility: public
   - port: 3002
-    onOpen: ignore
-    visibility: public    
+    onOpen: open-browser
+    visibility: public  
   - port: 3003
     onOpen: notify
 
