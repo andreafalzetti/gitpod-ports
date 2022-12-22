@@ -1,3 +1,5 @@
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - command: curl lama.sh | sh -s -- -p 5555
