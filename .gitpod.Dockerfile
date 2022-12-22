@@ -1,1 +1,1 @@
-FROM gitpod/workspace-base
+FROM ubuntu
